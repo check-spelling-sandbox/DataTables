@@ -7199,12 +7199,12 @@
 		var
 			i, iLen,
 			struct,
-			methodScoping = function ( scope, fn, struc ) {
+			methodScoping = function ( scope, fn, struct ) {
 				return function () {
 					var ret = fn.apply( scope, arguments );
 	
 					// Method extension
-					_Api.extend( ret, ret, struc.methodExt );
+					_Api.extend( ret, ret, struct.methodExt );
 					return ret;
 				};
 			};
