@@ -45,7 +45,7 @@
                 "Cedric"
             ],
             "hr": [
-                "Senior Javascript Developer",
+                "Senior JavaScript Developer",
                 "$433,060",
                 "2012\/03\/29"
             ],
@@ -110,7 +110,7 @@
                 "Colleen"
             ],
             "hr": [
-                "Javascript Developer",
+                "JavaScript Developer",
                 "$205,500",
                 "2009\/09\/15"
             ],
@@ -643,7 +643,7 @@
                 "Jennifer"
             ],
             "hr": [
-                "Junior Javascript Developer",
+                "Junior JavaScript Developer",
                 "$75,650",
                 "2013\/02\/01"
             ],
@@ -721,7 +721,7 @@
                 "Michael"
             ],
             "hr": [
-                "Javascript Developer",
+                "JavaScript Developer",
                 "$183,000",
                 "2011\/06\/27"
             ],

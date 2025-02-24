@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/ico" href="http://www.datatables.net/favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
-	<title>DataTables example - Javascript sourced data</title>
+	<title>DataTables example - JavaScript sourced data</title>
 	<link rel="stylesheet" type="text/css" href="../../media/css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="../resources/syntax/shCore.css">
 	<link rel="stylesheet" type="text/css" href="../resources/demo.css">
@@ -22,12 +22,12 @@ var dataSet = [
     [ "Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800" ],
     [ "Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750" ],
     [ "Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000" ],
-    [ "Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060" ],
+    [ "Cedric Kelly", "Senior JavaScript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060" ],
     [ "Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700" ],
     [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
     [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],
     [ "Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900" ],
-    [ "Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500" ],
+    [ "Colleen Hurst", "JavaScript Developer", "San Francisco", "2360", "2009/09/15", "$205,500" ],
     [ "Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600" ],
     [ "Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560" ],
     [ "Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000" ],
@@ -77,21 +77,21 @@ $(document).ready(function() {
 <body class="dt-example">
 	<div class="container">
 		<section>
-			<h1>DataTables example <span>Javascript sourced data</span></h1>
+			<h1>DataTables example <span>JavaScript sourced data</span></h1>
 			<div class="info">
 				<p>At times you will wish to be able to create a table from dynamic information passed directly to DataTables, rather than having it read from the document. This
 				is achieved using the <a href="//datatables.net/reference/option/data"><code class="option" title="DataTables initialisation option">data</code></a> option in the
 				initialisation object, passing in an array of data to be used (like all other DataTables handled data, this can be arrays or objects using the <a href=
 				"//datatables.net/reference/option/columns.data"><code class="option" title="DataTables initialisation option">columns.data</code></a> option).</p>
 				<p>A <code class="tag" title="HTML tag">table</code> must be available on the page for DataTables to use. This examples shows an empty <code class="tag" title=
-				"HTML tag">table</code> element being initialising as a DataTable with a set of data from a Javascript array. The columns in the table are dynamically created
+				"HTML tag">table</code> element being initialising as a DataTable with a set of data from a JavaScript array. The columns in the table are dynamically created
 				based on the <a href="//datatables.net/reference/option/columns.title"><code class="option" title="DataTables initialisation option">columns.title</code></a>
 				configuration option.</p>
 			</div>
 			<div class="demo-html"></div>
 			<table id="example" class="display" width="100%"></table>
 			<ul class="tabs">
-				<li class="active">Javascript</li>
+				<li class="active">JavaScript</li>
 				<li>HTML</li>
 				<li>CSS</li>
 				<li>Ajax</li>
@@ -99,16 +99,16 @@ $(document).ready(function() {
 			</ul>
 			<div class="tabs">
 				<div class="js">
-					<p>The Javascript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">var dataSet = [
+					<p>The JavaScript shown below is used to initialise the table shown in this example:</p><code class="multiline language-js">var dataSet = [
     [ &quot;Tiger Nixon&quot;, &quot;System Architect&quot;, &quot;Edinburgh&quot;, &quot;5421&quot;, &quot;2011/04/25&quot;, &quot;$320,800&quot; ],
     [ &quot;Garrett Winters&quot;, &quot;Accountant&quot;, &quot;Tokyo&quot;, &quot;8422&quot;, &quot;2011/07/25&quot;, &quot;$170,750&quot; ],
     [ &quot;Ashton Cox&quot;, &quot;Junior Technical Author&quot;, &quot;San Francisco&quot;, &quot;1562&quot;, &quot;2009/01/12&quot;, &quot;$86,000&quot; ],
-    [ &quot;Cedric Kelly&quot;, &quot;Senior Javascript Developer&quot;, &quot;Edinburgh&quot;, &quot;6224&quot;, &quot;2012/03/29&quot;, &quot;$433,060&quot; ],
+    [ &quot;Cedric Kelly&quot;, &quot;Senior JavaScript Developer&quot;, &quot;Edinburgh&quot;, &quot;6224&quot;, &quot;2012/03/29&quot;, &quot;$433,060&quot; ],
     [ &quot;Airi Satou&quot;, &quot;Accountant&quot;, &quot;Tokyo&quot;, &quot;5407&quot;, &quot;2008/11/28&quot;, &quot;$162,700&quot; ],
     [ &quot;Brielle Williamson&quot;, &quot;Integration Specialist&quot;, &quot;New York&quot;, &quot;4804&quot;, &quot;2012/12/02&quot;, &quot;$372,000&quot; ],
     [ &quot;Herrod Chandler&quot;, &quot;Sales Assistant&quot;, &quot;San Francisco&quot;, &quot;9608&quot;, &quot;2012/08/06&quot;, &quot;$137,500&quot; ],
     [ &quot;Rhona Davidson&quot;, &quot;Integration Specialist&quot;, &quot;Tokyo&quot;, &quot;6200&quot;, &quot;2010/10/14&quot;, &quot;$327,900&quot; ],
-    [ &quot;Colleen Hurst&quot;, &quot;Javascript Developer&quot;, &quot;San Francisco&quot;, &quot;2360&quot;, &quot;2009/09/15&quot;, &quot;$205,500&quot; ],
+    [ &quot;Colleen Hurst&quot;, &quot;JavaScript Developer&quot;, &quot;San Francisco&quot;, &quot;2360&quot;, &quot;2009/09/15&quot;, &quot;$205,500&quot; ],
     [ &quot;Sonya Frost&quot;, &quot;Software Engineer&quot;, &quot;Edinburgh&quot;, &quot;1667&quot;, &quot;2008/12/13&quot;, &quot;$103,600&quot; ],
     [ &quot;Jena Gaines&quot;, &quot;Office Manager&quot;, &quot;London&quot;, &quot;3814&quot;, &quot;2008/12/19&quot;, &quot;$90,560&quot; ],
     [ &quot;Quinn Flynn&quot;, &quot;Support Lead&quot;, &quot;Edinburgh&quot;, &quot;9497&quot;, &quot;2013/03/03&quot;, &quot;$342,000&quot; ],
@@ -151,7 +151,7 @@ $(document).ready(function() {
 		]
 	} );
 } );</code>
-					<p>In addition to the above code, the following Javascript library files are loaded for use in this example:</p>
+					<p>In addition to the above code, the following JavaScript library files are loaded for use in this example:</p>
 					<ul>
 						<li>
 							<a href="https://code.jquery.com/jquery-3.5.1.js">https://code.jquery.com/jquery-3.5.1.js</a>
@@ -366,7 +366,7 @@ $(document).ready(function() {
 								<a href="./ajax.html">Ajax sourced data</a>
 							</li>
 							<li class="active">
-								<a href="./js_array.html">Javascript sourced data</a>
+								<a href="./js_array.html">JavaScript sourced data</a>
 							</li>
 							<li>
 								<a href="./server_side.html">Server-side processing</a>
