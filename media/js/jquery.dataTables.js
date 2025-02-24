@@ -10372,7 +10372,7 @@
 		 *  @example
 		 *    $(document).ready( function() {
 		 *      $('#example').dataTable( {
-		 *        "srollY": "200px",
+		 *        "scrollY": "200px",
 		 *        "paginate": false
 		 *      } );
 		 *
