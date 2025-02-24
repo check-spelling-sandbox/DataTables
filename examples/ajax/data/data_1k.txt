@@ -3677,7 +3677,7 @@
 			"name": "Barney Bennett",
 			"position": "Electrician",
 			"salary": "$180,941",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "9097",
 			"start_date": "9/7/2003"
 		},
@@ -4496,7 +4496,7 @@
 			"name": "Lorraine Walker",
 			"position": "Insurance Broker",
 			"salary": "$244,124",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "4881",
 			"start_date": "1/30/2003"
 		},
@@ -5144,7 +5144,7 @@
 			"name": "Lara Kirby",
 			"position": "Operator",
 			"salary": "$144,260",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "6190",
 			"start_date": "12/18/2005"
 		},
@@ -7457,7 +7457,7 @@
 			"name": "Benny Murphy",
 			"position": "Cash Manager",
 			"salary": "$121,603",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "5498",
 			"start_date": "12/10/2017"
 		},
@@ -8888,7 +8888,7 @@
 			"name": "Hank Mitchell",
 			"position": "IT Support Staff",
 			"salary": "$242,052",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8713",
 			"start_date": "3/26/2010"
 		},

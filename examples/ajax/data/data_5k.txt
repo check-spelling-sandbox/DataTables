@@ -77,7 +77,7 @@
 			"name": "Ethan Gardner",
 			"position": "Design Engineer",
 			"salary": "$271,846",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "1979",
 			"start_date": "5/29/2018"
 		},
@@ -2372,7 +2372,7 @@
 			"name": "Elena Mooney",
 			"position": "Project Manager",
 			"salary": "$169,393",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "3418",
 			"start_date": "11/19/2000"
 		},
@@ -3263,7 +3263,7 @@
 			"name": "Jayden Rogan",
 			"position": "Health Educator",
 			"salary": "$133,776",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "9991",
 			"start_date": "1/28/2018"
 		},
@@ -3830,7 +3830,7 @@
 			"name": "Danny Ebden",
 			"position": "Design Engineer",
 			"salary": "$188,538",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7775",
 			"start_date": "8/30/2019"
 		},
@@ -3938,7 +3938,7 @@
 			"name": "Cynthia Bayliss",
 			"position": "Electrician",
 			"salary": "$126,612",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "6269",
 			"start_date": "5/31/2010"
 		},
@@ -4559,7 +4559,7 @@
 			"name": "Carla Harris",
 			"position": "Project Manager",
 			"salary": "$136,798",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8308",
 			"start_date": "9/29/2017"
 		},
@@ -5108,7 +5108,7 @@
 			"name": "Peter Nicholls",
 			"position": "Call Center Representative",
 			"salary": "$213,666",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "3353",
 			"start_date": "11/9/2011"
 		},
@@ -5513,7 +5513,7 @@
 			"name": "Harvey Rowe",
 			"position": "Cashier",
 			"salary": "$58,453",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7407",
 			"start_date": "3/25/2018"
 		},
@@ -8060,7 +8060,7 @@
 			"name": "Diane Andersson",
 			"position": "Doctor",
 			"salary": "$102,666",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7643",
 			"start_date": "4/26/2007"
 		},
@@ -8717,7 +8717,7 @@
 			"name": "Noah Rosenbloom",
 			"position": "Software Engineer",
 			"salary": "$48,635",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "1934",
 			"start_date": "8/5/2005"
 		},
@@ -11282,7 +11282,7 @@
 			"name": "Daniel Dunbar",
 			"position": "Assistant Buyer",
 			"salary": "$14,283",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7431",
 			"start_date": "1/1/2005"
 		},
@@ -11651,7 +11651,7 @@
 			"name": "Enoch Mitchell",
 			"position": "Biologist",
 			"salary": "$232,408",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "3716",
 			"start_date": "7/6/2007"
 		},
@@ -11705,7 +11705,7 @@
 			"name": "Abdul Owens",
 			"position": "Global Logistics Supervisor",
 			"salary": "$93,262",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "4880",
 			"start_date": "1/14/2016"
 		},
@@ -12956,7 +12956,7 @@
 			"name": "Sabrina Fowler",
 			"position": "Treasurer",
 			"salary": "$224,704",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7354",
 			"start_date": "4/14/2015"
 		},
@@ -13064,7 +13064,7 @@
 			"name": "Denis Weatcroft",
 			"position": "Stockbroker",
 			"salary": "$16,734",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "3269",
 			"start_date": "7/4/2018"
 		},
@@ -13982,7 +13982,7 @@
 			"name": "Nicholas Roberts",
 			"position": "Electrician",
 			"salary": "$185,031",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8661",
 			"start_date": "10/26/2007"
 		},
@@ -14657,7 +14657,7 @@
 			"name": "Alexander Gordon",
 			"position": "Software Engineer",
 			"salary": "$43,528",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "4881",
 			"start_date": "9/7/2005"
 		},
@@ -17447,7 +17447,7 @@
 			"name": "Mark Boden",
 			"position": "Restaurant Manager",
 			"salary": "$178,448",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "1179",
 			"start_date": "6/1/2015"
 		},
@@ -18410,7 +18410,7 @@
 			"name": "Percy Tait",
 			"position": "Call Center Representative",
 			"salary": "$30,168",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7273",
 			"start_date": "5/23/2016"
 		},
@@ -20570,7 +20570,7 @@
 			"name": "Freya Campbell",
 			"position": "Ambulatory Nurse",
 			"salary": "$207,872",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "2696",
 			"start_date": "5/13/2016"
 		},
@@ -21227,7 +21227,7 @@
 			"name": "Henry Barrett",
 			"position": "Electrician",
 			"salary": "$67,753",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "5861",
 			"start_date": "5/6/2001"
 		},
@@ -22928,7 +22928,7 @@
 			"name": "Sonya Radcliffe",
 			"position": "Dentist",
 			"salary": "$182,858",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "5685",
 			"start_date": "12/13/2014"
 		},
@@ -24233,7 +24233,7 @@
 			"name": "Livia Larsen",
 			"position": "Staffing Consultant",
 			"salary": "$273,664",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7768",
 			"start_date": "2/12/2019"
 		},
@@ -24602,7 +24602,7 @@
 			"name": "Wade Foxley",
 			"position": "Executive Director",
 			"salary": "$201,694",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8550",
 			"start_date": "9/7/2019"
 		},
@@ -24728,7 +24728,7 @@
 			"name": "Carl Warden",
 			"position": "Service Supervisor",
 			"salary": "$142,468",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "2646",
 			"start_date": "3/3/2010"
 		},
@@ -24836,7 +24836,7 @@
 			"name": "Logan Morris",
 			"position": "Bellman",
 			"salary": "$116,736",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "2816",
 			"start_date": "2/6/2002"
 		},
@@ -25187,7 +25187,7 @@
 			"name": "Hadley Anderson",
 			"position": "Auditor",
 			"salary": "$241,544",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8364",
 			"start_date": "4/5/2018"
 		},
@@ -25520,7 +25520,7 @@
 			"name": "Kenzie Waterhouse",
 			"position": "Staffing Consultant",
 			"salary": "$189,763",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7673",
 			"start_date": "4/7/2016"
 		},
@@ -26699,7 +26699,7 @@
 			"name": "Kirsten Olson",
 			"position": "Health Educator",
 			"salary": "$29,274",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7477",
 			"start_date": "4/6/2010"
 		},
@@ -27032,7 +27032,7 @@
 			"name": "Roger Gray",
 			"position": "Dentist",
 			"salary": "$290,190",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "7444",
 			"start_date": "4/14/2005"
 		},
@@ -27788,7 +27788,7 @@
 			"name": "George Howard",
 			"position": "CNC Operator",
 			"salary": "$130,474",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "9807",
 			"start_date": "11/27/2009"
 		},
@@ -28733,7 +28733,7 @@
 			"name": "Candace Michael",
 			"position": "Health Educator",
 			"salary": "$231,195",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "4329",
 			"start_date": "6/12/2004"
 		},
@@ -30092,7 +30092,7 @@
 			"name": "Alma Cadman",
 			"position": "Web Developer",
 			"salary": "$273,192",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8063",
 			"start_date": "10/14/2003"
 		},
@@ -30668,7 +30668,7 @@
 			"name": "Joseph Adams",
 			"position": "Auditor",
 			"salary": "$95,688",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "1092",
 			"start_date": "2/22/2006"
 		},
@@ -35546,7 +35546,7 @@
 			"name": "Laila Eagle",
 			"position": "Paramedic",
 			"salary": "$297,236",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "1098",
 			"start_date": "8/14/2009"
 		},
@@ -36824,7 +36824,7 @@
 			"name": "Joseph Everett",
 			"position": "Accountant",
 			"salary": "$11,201",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "8450",
 			"start_date": "3/19/2003"
 		},
@@ -38570,7 +38570,7 @@
 			"name": "Josh Whinter",
 			"position": "Bellman",
 			"salary": "$294,678",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "5762",
 			"start_date": "1/12/2003"
 		},
@@ -40352,7 +40352,7 @@
 			"name": "Benny Mason",
 			"position": "Paramedic",
 			"salary": "$112,229",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "4948",
 			"start_date": "10/17/2015"
 		},
@@ -41180,7 +41180,7 @@
 			"name": "Adalind Thornton",
 			"position": "Accountant",
 			"salary": "$270,746",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "6806",
 			"start_date": "4/8/2006"
 		},
@@ -41963,7 +41963,7 @@
 			"name": "Lara Chappell",
 			"position": "Web Developer",
 			"salary": "$161,052",
-			"office": "Otawa",
+			"office": "Ottawa",
 			"extn": "2800",
 			"start_date": "9/1/2009"
 		},
