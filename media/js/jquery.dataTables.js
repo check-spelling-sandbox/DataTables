@@ -3709,7 +3709,7 @@
 	/**
 	 * Use the DOM source to create up an array of header cells. The idea here is to
 	 * create a layout grid (array) of rows x columns, which contains a reference
-	 * to the cell that that point in the grid (regardless of col/rowspan), such that
+	 * to the cell at that point in the grid (regardless of col/rowspan), such that
 	 * any column / row could be removed and the new grid constructed
 	 *  @param array {object} aLayout Array to store the calculated layout in
 	 *  @param {node} nThead The header/footer element for the table
