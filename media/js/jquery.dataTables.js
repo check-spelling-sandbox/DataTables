@@ -1426,19 +1426,19 @@
 	
 	var _pluck = function ( a, prop, prop2 ) {
 		var out = [];
-		var i=0, ien=a.length;
+		var i=0, iLen=a.length;
 	
 		// Could have the test in the loop for slightly smaller code, but speed
 		// is essential here
 		if ( prop2 !== undefined ) {
-			for ( ; i<ien ; i++ ) {
+			for ( ; i<iLen ; i++ ) {
 				if ( a[i] && a[i][ prop ] ) {
 					out.push( a[i][ prop ][ prop2 ] );
 				}
 			}
 		}
 		else {
-			for ( ; i<ien ; i++ ) {
+			for ( ; i<iLen ; i++ ) {
 				if ( a[i] ) {
 					out.push( a[i][ prop ] );
 				}
@@ -1454,19 +1454,19 @@
 	var _pluck_order = function ( a, order, prop, prop2 )
 	{
 		var out = [];
-		var i=0, ien=order.length;
+		var i=0, iLen=order.length;
 	
 		// Could have the test in the loop for slightly smaller code, but speed
 		// is essential here
 		if ( prop2 !== undefined ) {
-			for ( ; i<ien ; i++ ) {
+			for ( ; i<iLen ; i++ ) {
 				if ( a[ order[i] ][ prop ] ) {
 					out.push( a[ order[i] ][ prop ][ prop2 ] );
 				}
 			}
 		}
 		else {
-			for ( ; i<ien ; i++ ) {
+			for ( ; i<iLen ; i++ ) {
 				out.push( a[ order[i] ][ prop ] );
 			}
 		}
@@ -1501,7 +1501,7 @@
 	{
 		var out = [];
 	
-		for ( var i=0, ien=a.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=a.length ; i<iLen ; i++ ) {
 			if ( a[i] ) { // careful - will remove all falsy values!
 				out.push( a[i] );
 			}
@@ -1533,7 +1533,7 @@
 		var sorted = src.slice().sort();
 		var last = sorted[0];
 	
-		for ( var i=1, ien=sorted.length ; i<ien ; i++ ) {
+		for ( var i=1, iLen=sorted.length ; i<iLen ; i++ ) {
 			if ( sorted[i] === last ) {
 				return false;
 			}
@@ -1565,10 +1565,10 @@
 		var
 			out = [],
 			val,
-			i, ien=src.length,
+			i, iLen=src.length,
 			j, k=0;
 	
-		again: for ( i=0 ; i<ien ; i++ ) {
+		again: for ( i=0 ; i<iLen ; i++ ) {
 			val = src[i];
 	
 			for ( j=0 ; j<k ; j++ ) {
@@ -1817,7 +1817,7 @@
 		var searchCols = init.aoSearchCols;
 	
 		if ( searchCols ) {
-			for ( var i=0, ien=searchCols.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=searchCols.length ; i<iLen ; i++ ) {
 				if ( searchCols[i] ) {
 					_fnCamelToHungarian( DataTable.models.oSearch, searchCols[i] );
 				}
@@ -2241,11 +2241,11 @@
 		var columns = settings.aoColumns;
 		var data = settings.aoData;
 		var types = DataTable.ext.type.detect;
-		var i, ien, j, jen, k, ken;
+		var i, iLen, j, jen, k, ken;
 		var col, cell, detectedType, cache;
 	
 		// For each column, spin over the 
-		for ( i=0, ien=columns.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=columns.length ; i<iLen ; i++ ) {
 			col = columns[i];
 			cache = [];
 	
@@ -2887,7 +2887,7 @@
 	function _fnInvalidate( settings, rowIdx, src, colIdx )
 	{
 		var row = settings.aoData[ rowIdx ];
-		var i, ien;
+		var i, iLen;
 		var cellWrite = function ( cell, col ) {
 			// This is very frustrating, but in IE if you just write directly
 			// to innerHTML, and elements that are overwritten are GC'ed,
@@ -2916,7 +2916,7 @@
 					cellWrite( cells[colIdx], colIdx );
 				}
 				else {
-					for ( i=0, ien=cells.length ; i<ien ; i++ ) {
+					for ( i=0, iLen=cells.length ; i<iLen ; i++ ) {
 						cellWrite( cells[i], i );
 					}
 				}
@@ -2935,7 +2935,7 @@
 			cols[ colIdx ].sType = null;
 		}
 		else {
-			for ( i=0, ien=cols.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=cols.length ; i<iLen ; i++ ) {
 				cols[i].sType = null;
 			}
 	
@@ -3198,7 +3198,7 @@
 	 */
 	function _fnBuildHead( oSettings )
 	{
-		var i, ien, cell, row, column;
+		var i, iLen, cell, row, column;
 		var thead = oSettings.nTHead;
 		var tfoot = oSettings.nTFoot;
 		var createHeader = $('th, td', thead).length === 0;
@@ -3209,7 +3209,7 @@
 			row = $('<tr/>').appendTo( thead );
 		}
 	
-		for ( i=0, ien=columns.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=columns.length ; i<iLen ; i++ ) {
 			column = columns[i];
 			cell = $( column.nTh ).addClass( column.sClass );
 	
@@ -3257,7 +3257,7 @@
 		if ( tfoot !== null ) {
 			var cells = oSettings.aoFooter[0];
 	
-			for ( i=0, ien=cells.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=cells.length ; i<iLen ; i++ ) {
 				column = columns[i];
 				column.nTf = cells[i].cell;
 	
@@ -4124,7 +4124,7 @@
 		settings._iRecordsTotal   = parseInt(recordsTotal, 10);
 		settings._iRecordsDisplay = parseInt(recordsFiltered, 10);
 	
-		for ( var i=0, ien=data.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=data.length ; i<iLen ; i++ ) {
 			_fnAddData( settings, data[i] );
 		}
 		settings.aiDisplay = settings.aiDisplayMaster.slice();
@@ -4327,7 +4327,7 @@
 		var displayRows = settings.aiDisplay;
 		var row, rowIdx;
 	
-		for ( var i=0, ien=filters.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=filters.length ; i<iLen ; i++ ) {
 			var rows = [];
 	
 			// Loop over each row and see if it should be included
@@ -4493,11 +4493,11 @@
 	{
 		var columns = settings.aoColumns;
 		var column;
-		var i, j, ien, jen, filterData, cellData, row;
+		var i, j, iLen, jen, filterData, cellData, row;
 		var formatters = DataTable.ext.type.search;
 		var wasInvalidated = false;
 	
-		for ( i=0, ien=settings.aoData.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=settings.aoData.length ; i<iLen ; i++ ) {
 			row = settings.aoData[i];
 	
 			if ( ! row._aFilterData ) {
@@ -4829,7 +4829,7 @@
 			'class':         classes.sLengthSelect
 		} );
 	
-		for ( var i=0, ien=lengths.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=lengths.length ; i<iLen ; i++ ) {
 			select[0][ i ] = new Option(
 				typeof language[i] === 'number' ?
 					settings.fnFormatNumber( language[i] ) :
@@ -4911,9 +4911,9 @@
 							page = all ? 0 : Math.ceil( start / len ),
 							pages = all ? 1 : Math.ceil( visRecords / len ),
 							buttons = plugin(page, pages),
-							i, ien;
+							i, iLen;
 	
-						for ( i=0, ien=features.p.length ; i<ien ; i++ ) {
+						for ( i=0, iLen=features.p.length ; i<iLen ; i++ ) {
 							_fnRenderer( settings, 'pageButton' )(
 								settings, features.p[i], i, buttons, page, pages
 							);
@@ -5812,7 +5812,7 @@
 	{
 		var s, max=-1, maxIdx = -1;
 	
-		for ( var i=0, ien=settings.aoData.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=settings.aoData.length ; i<iLen ; i++ ) {
 			s = _fnGetCellData( settings, i, colIdx, 'display' )+'';
 			s = s.replace( __re_html_remove, '' );
 			s = s.replace( /&nbsp;/g, ' ' );
@@ -5928,7 +5928,7 @@
 	function _fnSort ( oSettings )
 	{
 		var
-			i, ien, iLen, j, jLen, k, kLen,
+			i, iLen, iLen, j, jLen, k, kLen,
 			sDataType, nTh,
 			aiOrig = [],
 			oExtSort = DataTable.ext.type.order,
@@ -5947,7 +5947,7 @@
 	
 		aSort = _fnSortFlatten( oSettings );
 	
-		for ( i=0, ien=aSort.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=aSort.length ; i<iLen ; i++ ) {
 			sortCol = aSort[i];
 	
 			// Track if we can use the fast sort algorithm
@@ -6234,11 +6234,11 @@
 		var sortClass = settings.oClasses.sSortColumn;
 		var sort = _fnSortFlatten( settings );
 		var features = settings.oFeatures;
-		var i, ien, colIdx;
+		var i, iLen, colIdx;
 	
 		if ( features.bSort && features.bSortClasses ) {
 			// Remove old sorting classes
-			for ( i=0, ien=oldSort.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=oldSort.length ; i<iLen ; i++ ) {
 				colIdx = oldSort[i].src;
 	
 				// Remove column sorting
@@ -6247,7 +6247,7 @@
 			}
 	
 			// Add new column sorting
-			for ( i=0, ien=sort.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=sort.length ; i<iLen ; i++ ) {
 				colIdx = sort[i].src;
 	
 				$( _pluck( settings.aoData, 'anCells', colIdx ) )
@@ -6278,7 +6278,7 @@
 		var row, cellData;
 		var formatter = DataTable.ext.type.order[ column.sType+"-pre" ];
 	
-		for ( var i=0, ien=settings.aoData.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=settings.aoData.length ; i<iLen ; i++ ) {
 			row = settings.aoData[i];
 	
 			if ( ! row._aSortData ) {
@@ -6342,7 +6342,7 @@
 	 */
 	function _fnLoadState ( settings, oInit, callback )
 	{
-		var i, ien;
+		var i, iLen;
 		var columns = settings.aoColumns;
 		var loaded = function ( s ) {
 			if ( ! s || ! s.time ) {
@@ -6403,7 +6403,7 @@
 			// Columns
 			//
 			if ( s.columns ) {
-				for ( i=0, ien=s.columns.length ; i<ien ; i++ ) {
+				for ( i=0, iLen=s.columns.length ; i<iLen ; i++ ) {
 					var col = s.columns[i];
 	
 					// Visibility
@@ -6905,7 +6905,7 @@
 		};
 	
 		if ( $.isArray( context ) ) {
-			for ( var i=0, ien=context.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=context.length ; i<iLen ; i++ ) {
 				ctxSettings( context[i] );
 			}
 		}
@@ -6956,7 +6956,7 @@
 	
 		each: function ( fn )
 		{
-			for ( var i=0, ien=this.length ; i<ien; i++ ) {
+			for ( var i=0, iLen=this.length ; i<iLen; i++ ) {
 				fn.call( this, this[i], i, this );
 			}
 	
@@ -6983,7 +6983,7 @@
 			}
 			else {
 				// Compatibility for browsers without ECMA-262-5 (JS 1.6)
-				for ( var i=0, ien=this.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=this.length ; i<iLen ; i++ ) {
 					if ( fn.call( this, this[i], i, this ) ) {
 						a.push( this[i] );
 					}
@@ -7006,7 +7006,7 @@
 	
 		indexOf: __arrayProto.indexOf || function (obj, start)
 		{
-			for ( var i=(start || 0), ien=this.length ; i<ien ; i++ ) {
+			for ( var i=(start || 0), iLen=this.length ; i<iLen ; i++ ) {
 				if ( this[i] === obj ) {
 					return i;
 				}
@@ -7017,7 +7017,7 @@
 		iterator: function ( flatten, type, fn, alwaysNew ) {
 			var
 				a = [], ret,
-				i, ien, j, jen,
+				i, iLen, j, jen,
 				context = this.context,
 				rows, items, item,
 				selector = this.selector;
@@ -7030,7 +7030,7 @@
 				flatten = false;
 			}
 	
-			for ( i=0, ien=context.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=context.length ; i<iLen ; i++ ) {
 				var apiInst = new _Api( context[i] );
 	
 				if ( type === 'table' ) {
@@ -7105,7 +7105,7 @@
 			}
 			else {
 				// Compatibility for browsers without ECMA-262-5 (JS 1.6)
-				for ( var i=0, ien=this.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=this.length ; i<iLen ; i++ ) {
 					a.push( fn.call( this, this[i], i ) );
 				}
 			}
@@ -7197,7 +7197,7 @@
 		}
 	
 		var
-			i, ien,
+			i, iLen,
 			struct,
 			methodScoping = function ( scope, fn, struc ) {
 				return function () {
@@ -7209,7 +7209,7 @@
 				};
 			};
 	
-		for ( i=0, ien=ext.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=ext.length ; i<iLen ; i++ ) {
 			struct = ext[i];
 	
 			// Value
@@ -7270,13 +7270,13 @@
 		}
 	
 		var
-			i, ien,
+			i, iLen,
 			heir = name.split('.'),
 			struct = __apiStruct,
 			key, method;
 	
 		var find = function ( src, name ) {
-			for ( var i=0, ien=src.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=src.length ; i<iLen ; i++ ) {
 				if ( src[i].name === name ) {
 					return src[i];
 				}
@@ -7284,7 +7284,7 @@
 			return null;
 		};
 	
-		for ( i=0, ien=heir.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=heir.length ; i<iLen ; i++ ) {
 			method = heir[i].indexOf('()') !== -1;
 			key = method ?
 				heir[i].replace('()', '') :
@@ -7302,7 +7302,7 @@
 				struct.push( src );
 			}
 	
-			if ( i === ien-1 ) {
+			if ( i === iLen-1 ) {
 				src.val = val;
 				src.type = typeof val === 'function' ?
 					'function' :
@@ -7601,7 +7601,7 @@
 				_fnClearTable( settings );
 	
 				var data = _fnAjaxDataSrc( settings, json );
-				for ( var i=0, ien=data.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=data.length ; i<iLen ; i++ ) {
 					_fnAddData( settings, data[i] );
 				}
 	
@@ -7728,7 +7728,7 @@
 	{
 		var
 			out = [], res,
-			a, i, ien, j, jen,
+			a, i, iLen, j, jen,
 			selectorType = typeof selector;
 	
 		// Can't just check for isArray here, as an API or jQuery instance might be
@@ -7737,7 +7737,7 @@
 			selector = [ selector ];
 		}
 	
-		for ( i=0, ien=selector.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=selector.length ; i<iLen ; i++ ) {
 			// Only split on simple strings - complex expressions will be jQuery selectors
 			a = selector[i] && selector[i].split && ! selector[i].match(/[\[\(:]/) ?
 				selector[i].split(',') :
@@ -7755,7 +7755,7 @@
 		// selector extensions
 		var ext = _ext.selector[ type ];
 		if ( ext.length ) {
-			for ( i=0, ien=ext.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=ext.length ; i<iLen ; i++ ) {
 				out = ext[i]( settings, opts, out );
 			}
 		}
@@ -7787,7 +7787,7 @@
 	var _selector_first = function ( inst )
 	{
 		// Reduce the API instance to the first item found
-		for ( var i=0, ien=inst.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=inst.length ; i<iLen ; i++ ) {
 			if ( inst[i].length > 0 ) {
 				// Assign the first element to the first item in the instance
 				// and truncate the instance and context
@@ -7809,7 +7809,7 @@
 	var _selector_row_indexes = function ( settings, opts )
 	{
 		var
-			i, ien, tmp, a=[],
+			i, iLen, tmp, a=[],
 			displayFiltered = settings.aiDisplay,
 			displayMaster = settings.aiDisplayMaster;
 	
@@ -7831,7 +7831,7 @@
 			// Current page implies that order=current and filter=applied, since it is
 			// fairly senseless otherwise, regardless of what order and search actually
 			// are
-			for ( i=settings._iDisplayStart, ien=settings.fnDisplayEnd() ; i<ien ; i++ ) {
+			for ( i=settings._iDisplayStart, iLen=settings.fnDisplayEnd() ; i<iLen ; i++ ) {
 				a.push( displayFiltered[i] );
 			}
 		}
@@ -7846,7 +7846,7 @@
 				// O(n+m) solution by creating a hash map
 				var displayFilteredMap = {};
 	
-				for ( var i=0, ien=displayFiltered.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=displayFiltered.length ; i<iLen ; i++ ) {
 					displayFilteredMap[displayFiltered[i]] = null;
 				}
 	
@@ -7858,7 +7858,7 @@
 			}
 		}
 		else if ( order == 'index' || order == 'original' ) {
-			for ( i=0, ien=settings.aoData.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=settings.aoData.length ; i<iLen ; i++ ) {
 				if ( search == 'none' ) {
 					a.push( i );
 				}
@@ -7893,7 +7893,7 @@
 		var rows;
 		var run = function ( sel ) {
 			var selInt = _intVal( sel );
-			var i, ien;
+			var i, iLen;
 			var aoData = settings.aoData;
 	
 			// Short cut - selector is a number and no options provided (default is
@@ -8047,7 +8047,7 @@
 		var context = this.context;
 	
 		// `iterator` will drop undefined values, but in this case we want them
-		for ( var i=0, ien=context.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=context.length ; i<iLen ; i++ ) {
 			for ( var j=0, jen=this[i].length ; j<jen ; j++ ) {
 				var id = context[i].rowIdFn( context[i].aoData[ this[i][j] ]._aData );
 				a.push( (hash === true ? '#' : '' )+ id );
@@ -8063,13 +8063,13 @@
 		this.iterator( 'row', function ( settings, row, thatIdx ) {
 			var data = settings.aoData;
 			var rowData = data[ row ];
-			var i, ien, j, jen;
+			var i, iLen, j, jen;
 			var loopRow, loopCells;
 	
 			data.splice( row, 1 );
 	
 			// Update the cached indexes
-			for ( i=0, ien=data.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=data.length ; i<iLen ; i++ ) {
 				loopRow = data[i];
 				loopCells = loopRow.anCells;
 	
@@ -8107,7 +8107,7 @@
 		} );
 	
 		this.iterator( 'table', function ( settings ) {
-			for ( var i=0, ien=settings.aoData.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=settings.aoData.length ; i<iLen ; i++ ) {
 				settings.aoData[i].idx = i;
 			}
 		} );
@@ -8118,10 +8118,10 @@
 	
 	_api_register( 'rows.add()', function ( rows ) {
 		var newRows = this.iterator( 'table', function ( settings ) {
-				var row, i, ien;
+				var row, i, iLen;
 				var out = [];
 	
-				for ( i=0, ien=rows.length ; i<ien ; i++ ) {
+				for ( i=0, iLen=rows.length ; i<iLen ; i++ ) {
 					row = rows[i];
 	
 					if ( row.nodeName && row.nodeName.toUpperCase() === 'TR' ) {
@@ -8217,7 +8217,7 @@
 		var addRow = function ( r, k ) {
 			// Recursion to allow for arrays of jQuery objects
 			if ( $.isArray( r ) || r instanceof $ ) {
-				for ( var i=0, ien=r.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=r.length ; i<iLen ; i++ ) {
 					addRow( r[i], k );
 				}
 				return;
@@ -8332,7 +8332,7 @@
 				// a colspan)
 				var row, visible = _fnVisbleColumns( ctx );
 	
-				for ( var i=0, ien=data.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=data.length ; i<iLen ; i++ ) {
 					row = data[i];
 	
 					if ( row._details ) {
@@ -8347,7 +8347,7 @@
 					return;
 				}
 	
-				for ( var i=0, ien=data.length ; i<ien ; i++ ) {
+				for ( var i=0, iLen=data.length ; i<iLen ; i++ ) {
 					if ( data[i]._details ) {
 						__details_remove( api, i );
 					}
@@ -8451,7 +8451,7 @@
 	// iterator callback in columns().data()
 	var __columnData = function ( settings, column, r1, r2, rows ) {
 		var a = [];
-		for ( var row=0, ien=rows.length ; row<ien ; row++ ) {
+		for ( var row=0, iLen=rows.length ; row<iLen ; row++ ) {
 			a.push( _fnGetCellData( settings, rows[row], column ) );
 		}
 		return a;
@@ -8560,7 +8560,7 @@
 			cols = settings.aoColumns,
 			col  = cols[ column ],
 			data = settings.aoData,
-			row, cells, i, ien, tr;
+			row, cells, i, iLen, tr;
 	
 		// Get
 		if ( vis === undefined ) {
@@ -8578,7 +8578,7 @@
 			// Need to decide if we should use appendChild or insertBefore
 			var insertBefore = $.inArray( true, _pluck(cols, 'bVisible'), column+1 );
 	
-			for ( i=0, ien=data.length ; i<ien ; i++ ) {
+			for ( i=0, iLen=data.length ; i<iLen ; i++ ) {
 				tr = data[i].nTr;
 				cells = data[i].anCells;
 	
@@ -8736,7 +8736,7 @@
 		var allCells = $( [].concat.apply([], cells) );
 		var row;
 		var columns = settings.aoColumns.length;
-		var a, i, ien, j, o, host;
+		var a, i, iLen, j, o, host;
 	
 		var run = function ( s ) {
 			var fnSelector = typeof s === 'function';
@@ -8745,7 +8745,7 @@
 				// All cells and function selectors
 				a = [];
 	
-				for ( i=0, ien=rows.length ; i<ien ; i++ ) {
+				for ( i=0, iLen=rows.length ; i<iLen ; i++ ) {
 					row = rows[i];
 	
 					for ( j=0 ; j<columns ; j++ ) {
@@ -8850,12 +8850,12 @@
 		// Row + column selector
 		var columns = this.columns( columnSelector, internalOpts );
 		var rows = this.rows( rowSelector, internalOpts );
-		var i, ien, j, jen;
+		var i, iLen, j, jen;
 	
 		var cellsNoOpts = this.iterator( 'table', function ( settings, idx ) {
 			var a = [];
 	
-			for ( i=0, ien=rows[idx].length ; i<ien ; i++ ) {
+			for ( i=0, iLen=rows[idx].length ; i<iLen ; i++ ) {
 				for ( j=0, jen=columns[idx].length ; j<jen ; j++ ) {
 					a.push( {
 						row:    rows[idx][i],
@@ -9363,7 +9363,7 @@
 			var jqTbody   = $(tbody);
 			var jqWrapper = $(settings.nTableWrapper);
 			var rows      = $.map( settings.aoData, function (r) { return r.nTr; } );
-			var i, ien;
+			var i, iLen;
 	
 			// Flag to note that the table is currently being destroyed - no action
 			// should be taken
@@ -9427,11 +9427,11 @@
 				// If the were originally stripe classes - then we add them back here.
 				// Note this is not fool proof (for example if not all rows had stripe
 				// classes - but it's a good effort without getting carried away
-				ien = settings.asDestroyStripes.length;
+				iLen = settings.asDestroyStripes.length;
 	
-				if ( ien ) {
+				if ( iLen ) {
 					jqTbody.children().each( function (i) {
-						$(this).addClass( settings.asDestroyStripes[i % ien] );
+						$(this).addClass( settings.asDestroyStripes[i % iLen] );
 					} );
 				}
 			}
@@ -10161,7 +10161,7 @@
 		 *     "ajax": {
 		 *       "url": "data.json",
 		 *       "dataSrc": function ( json ) {
-		 *         for ( var i=0, ien=json.length ; i<ien ; i++ ) {
+		 *         for ( var i=0, iLen=json.length ; i<iLen ; i++ ) {
 		 *           json[i][0] = '<a href="/message/'+json[i][0]+'>View message</a>';
 		 *         }
 		 *         return json;
@@ -14566,13 +14566,13 @@
 				var btnDisplay, btnClass, counter=0;
 	
 				var attach = function( container, buttons ) {
-					var i, ien, node, button, tabIndex;
+					var i, iLen, node, button, tabIndex;
 					var disabledClass = classes.sPageButtonDisabled;
 					var clickHandler = function ( e ) {
 						_fnPageChange( settings, e.data.action, true );
 					};
 	
-					for ( i=0, ien=buttons.length ; i<ien ; i++ ) {
+					for ( i=0, iLen=buttons.length ; i<iLen ; i++ ) {
 						button = buttons[i];
 	
 						if ( $.isArray( button ) ) {
@@ -15305,7 +15305,7 @@
 	 *  @example
 	 *     // Pre-process the data returned from the server
 	 *     $('#table').dataTable().on('xhr.dt', function (e, settings, json) {
-	 *       for ( var i=0, ien=json.aaData.length ; i<ien ; i++ ) {
+	 *       for ( var i=0, iLen=json.aaData.length ; i<iLen ; i++ ) {
 	 *         json.aaData[i].sum = json.aaData[i].one + json.aaData[i].two;
 	 *       }
 	 *       // Note no return - manipulate the data directly in the JSON object.

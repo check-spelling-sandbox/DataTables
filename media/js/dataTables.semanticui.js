@@ -81,7 +81,7 @@ DataTable.ext.renderer.pageButton.semanticUI = function ( settings, host, idx, b
 	var btnDisplay, btnClass, counter=0;
 
 	var attach = function( container, buttons ) {
-		var i, ien, node, button;
+		var i, iLen, node, button;
 		var clickHandler = function ( e ) {
 			e.preventDefault();
 			if ( !$(e.currentTarget).hasClass('disabled') && api.page() != e.data.action ) {
@@ -89,7 +89,7 @@ DataTable.ext.renderer.pageButton.semanticUI = function ( settings, host, idx, b
 			}
 		};
 
-		for ( i=0, ien=buttons.length ; i<ien ; i++ ) {
+		for ( i=0, iLen=buttons.length ; i<iLen ; i++ ) {
 			button = buttons[i];
 
 			if ( $.isArray( button ) ) {
