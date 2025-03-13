@@ -34,7 +34,6 @@ CMO
 colgroup
 colspan
 compat
-compatiblity
 concat
 config
 css
