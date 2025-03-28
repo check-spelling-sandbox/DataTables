@@ -7,6 +7,7 @@ Our distribution repos (for NPM, Nuget, etc packages) are the `DataTables/Dist-*
 hjkdhkjs hjdkfhsadjkf sdfdasfas
 Hjdkfhsadjkf
 hjdkfhsadjkf's
+sdfdasfas's
 
 # DataTables plug-in for jQuery
 
